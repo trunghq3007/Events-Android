@@ -4,15 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/logo1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/inXML"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="btnOnClick"
+        android:text="OnClick In XML"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/lopNacDanh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/lopNacDanh"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="Xử lí sự kiện bằng lớp nặc danh"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/iplOnclickListener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inXML" />
+
+    <Button
+        android:id="@+id/iplOnclickListener"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="Implements OnClickListener Interface"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/eventVariable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lopNacDanh" />
+
+    <Button
+        android:id="@+id/eventVariable"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="Event Listener using Variable"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/listenerClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iplOnclickListener" />
+
+    <Button
+        android:id="@+id/listenerClass"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="Listener Class"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/performClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventVariable" />
+
+    <Button
+        android:id="@+id/performClick"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="PerformClick method"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listenerClass" />
 </android.support.constraint.ConstraintLayout>

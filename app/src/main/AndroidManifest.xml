@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/event"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/event"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".InXML" />
+        <activity android:name=".LopNacDanh" />
+        <activity android:name=".ImplementOnClickListenerInterface" />
+        <activity android:name=".EventVariale" />
+        <activity android:name=".ListenerClass" />
+        <activity android:name=".PerformClickActivity"></activity>
     </application>
 
 </manifest>
