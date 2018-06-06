@@ -11,7 +11,10 @@ public class ImplementOnClickListenerInterface extends AppCompatActivity impleme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_implement_on_click_listener_interface);
+
+
         findViewById(R.id.button).setOnClickListener(this);
+        findViewById(R.id.btn2Listener).setOnClickListener(this);
     }
 
     @Override
@@ -19,6 +22,9 @@ public class ImplementOnClickListenerInterface extends AppCompatActivity impleme
         switch (v.getId()) {
             case R.id.button:
                 Toast.makeText(this, "Implements OnClickListener Interface", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn2Listener:
+                Toast.makeText(this, "Implements OnClickListener Interface2", Toast.LENGTH_SHORT).show();
                 break;
         }
 

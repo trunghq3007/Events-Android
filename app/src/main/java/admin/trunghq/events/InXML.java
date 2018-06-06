@@ -14,6 +14,7 @@ public class InXML extends AppCompatActivity {
     }
 
     public void clickMe(View view) {
+        
         Toast.makeText(this, "OnClick In XML", Toast.LENGTH_SHORT).show();
     }
 }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class EventVariale extends AppCompatActivity {
+
     View.OnClickListener onClick = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
